@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Service - FIF Grup</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(123, 123, 123);
+    text-align: center;
+}
+
+/* RUNNING TEXT */
+.running-text {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 24px;
+    background: black;
+    color: white;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.running-text p {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 25px;
+    animation: jalan 12s linear infinite;
+}
+
+@keyframes jalan {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 25px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover {
+    color: #757777;
+}
+
+/* HEADER */
+.contact-header {
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.contact-header h1 {
+    font-size: 30px;
+}
+
+.contact-header p {
+    font-size: 14px;
+    color: #eee;
+}
+
+/* CONTAINER */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* FORM */
+.contact-form {
+    width: 320px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #979898;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #585859;
+    color: white;
+}
+
+/* INFO */
+.contact-info {
+    width: 320px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- RUNNING TEXT -->
+<div class="running-text">
+    <p>Selamat datang di Website penerimaan karyawan PT.FIF-Grup </p>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">FIF-Grup</div>
+    <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="cv_team.html">CV</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="#">Contact Service</a></li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
+<section class="contact-header">
+    <h1>Contact Service</h1>
+    <p>Silakan hubungi kami untuk informasi lebih lanjut</p>
+</section>
+
+<!-- CONTENT -->
+<section class="contact-container">
+
+    <!-- FORM -->
+    <div class="contact-form">
+        <h3>Kirim Pesan</h3>
+        <input type="text" placeholder="Nama Anda">
+        <input type="email" placeholder="Email Anda">
+        <textarea rows="4" placeholder="Pesan Anda"></textarea>
+        <button>Kirim</button>
+    </div>
+
+    <!-- INFO -->
+    <div class="contact-info">
+        <h3>Informasi Kontak</h3>
+        <p><b>Perusahaan:</b> PT. FIF Grup</p>
+        <p><b>Email:</b> cs@fifgroup.co.id</p>
+        <p><b>Telepon:</b> 0811 1098 696</p>
+        <p><b>Alamat:</b> Jl.Dr.Soetomo No.14, Kel Honipopu, Kec. Sirimau, Kota Ambon.</p>
+        <p><b>Jam Operasional:</b> Senin - Jumat (08.00 - 17.00)</p>
+    </div>
+
+</section>
+
+</body>
+</html>

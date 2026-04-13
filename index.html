@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal Portfolio Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* RUNNING TEXT */
+.running-text {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 24px;
+    background: black;
+    color: white;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.running-text p {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 25px;
+    animation: jalan 12s linear infinite;
+}
+
+@keyframes jalan {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 25px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* MENU KANAN */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #666868;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('asets/img/beranda.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OVERLAY */
+.overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    max-width: 700px;
+}
+
+/* TEXT */
+.overlay h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 20px;
+    background: #a2a2a2;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+</style>
+
+<body>
+
+<!-- RUNNING TEXT -->
+<div class="running-text">
+    <p>Selamat datang di Website penerimaan karyawan PT.FIF-Grup</p>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">FIF-Grup</div>
+    <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="cv_team.html">CV</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="contac.html">Contact Service</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay">
+        <h1>Selamat Datang di Penerimaan Karyawan PT.FIF-Grup</h1>
+        <p>
+            PT Federal International Finance FIFGROUP adalah perusahaan pembiayaan 
+            yang menyediakan layanan kredit untuk berbagai kebutuhan masyarakat.
+        </p>
+        <a href="cv_team.html" class="btn">Lihat Selengkapnya</a>
+    </div>
+</section>
+
+</body>
+</html>
